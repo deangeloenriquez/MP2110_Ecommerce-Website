@@ -1,0 +1,605 @@
+/* font used */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+/* general style */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+
+}
+
+/*section styles */
+.maxWidth{
+	max-width: 1600px;
+	padding: 0 80px;
+	margin: auto;
+}
+
+.books, .product, .orderForm, .gallery, .cartPage, .thankYouPage{
+	font-family: 'Poppins';
+	padding: 180px 0;
+	background: #f7f7f7;
+}
+
+.title{
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 60px;
+	padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title::after{
+	position: absolute;
+	bottom: -8px;
+	left: 50%;
+	font-size: 20px;
+	color: #cfcdc8;
+	padding: 0 5px;
+	background: #f7f7f7;
+	transform: translateX(-50%);
+}
+
+
+/* navigation bar style */
+.navigationBar{
+	position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    background: #5e4f45;
+}
+
+.navigationBar .maxWidth{
+	align-items: center;
+    justify-content: space-between;
+	margin: auto;
+	display: flex;
+}
+
+.navigationBar .name a{
+	color:#f7f7f7;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.navigationBar .name a span{
+	color: #c8e7e8;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.navigationBar .menu{
+	flex: 1;
+	text-align: right;
+}
+
+.navigationBar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+
+.navigationBar .menu li a{
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	margin-left: 25px;
+	transition: color 0.3s ease;
+}
+
+.navigationBar .menu li a span{
+	color: #c8e7e8;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.navigationBar .menu li a:hover{
+	color:	#c8e7e8;
+}
+
+/* cover style */
+.cover{
+	background: url("img/cover.png") no-repeat center;
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cover .maxWidth{
+    width: 100%;
+	display: flex;
+}
+
+.cover .text1{
+    font-size: 27px;
+}
+
+.cover .text2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.cover .text3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.cover .text3 span{
+    color: 	#5e4f45;
+    font-weight: 500;
+}
+
+/* gallery style */
+
+.gallery{
+	padding: 150px 0;
+}
+
+.maxWidthgallery{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.gallery .title::after{
+	content: "best sellers";
+}
+
+.gallery .galleryContent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card{
+	position: relative;
+	background: #968778;
+	max-width: 325px;
+	width: 325px;
+	height: auto;
+	margin: 25px;
+	box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: transform 0.5s;
+}
+
+.card:hover{
+   transform: translateY(-5px);
+}
+
+.gallery .galleryContent .card-image{
+	max-height: 200px;
+}
+
+.gallery .galleryContent .card-image img{
+	max-width: 100%;
+	height: auto;
+}
+
+.gallery .galleryContent .card-info{
+	position: relative;
+	color: white;
+	padding: 10px 20px 20px;
+}
+
+.gallery .galleryContent .card-info h3{
+	font-size: 1.8em;
+	font-weight: 800;
+	margin-bottom: 5px;
+}
+
+.gallery .galleryContent .card-info p{
+	font-size: 1em;
+	margin-bottom: 5px;
+	
+}
+
+
+/* book style */
+.books .title::after{
+	content: "browse all books";
+}
+
+.productContainer{
+	max-width: 1500px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.booksRow{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mainProduct{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+
+.mainProduct a{
+	color: black;
+}
+
+.mainProduct img{
+	width: 100%;
+	border-radius: 6px;
+}
+
+.mainProduct h4{
+	font-weight: normal;
+	font-size: 24px;
+}
+
+.mainProduct p{
+	font-size: 20px;
+	color: #5e4f45;
+	font-weight: bold;
+}
+
+.stars .fa{
+	color: #F9A602;
+}
+
+.mainProduct:hover{
+	transform: translateY(-5px);
+}
+
+
+/* product style */
+.product .productPage{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.product .productPage .bookContainer{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.product .productPage .bookContainer img{
+    max-width: 100%;
+}
+
+.product .productPage .bookContainer hl{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.singleProduct{
+	margin-top: 80px;
+}
+
+.singleProduct .bookContainer img{
+    padding: 0;
+}
+
+.singleProduct .bookContainer{
+	padding: 20px;
+}
+
+.singleProduct h4{
+	margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.singleProduct input{
+	width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+	margin-right: 10px;
+	border: 1px solid #968778;
+}
+
+.singleProduct input:focus{
+    outline: none;
+}
+
+form .btn{
+    display: flex;
+    background: #968778;
+    color: #fff;
+    padding: 10px 80px;
+    margin: 30px 0;
+    border-radius: 30px;
+    border: 2px solid #968778;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.btn:hover{
+	background: none;
+	color: #968778;
+}
+
+.product{
+	font-family: 'Poppins';
+	padding: 180px 0 110px;
+	background: #f7f7f7;
+}
+
+.relatedPage{
+	font-family: 'Poppins';
+	background: #f7f7f7;
+}
+
+.relatedPage .title::after{
+	content: "you might also like:";
+}
+
+
+/* my orders style */
+
+.cartPage{
+	padding: 120px;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th{
+	text-align: left;
+	padding: 5px;
+	color: #f7f7f7;
+	background: #968778;
+	font-weight: normal;
+}
+
+td{
+	padding: 10px 5px;
+}
+
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color: crimson;
+    font-size: 12px;
+}
+
+.totalPrice{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.totalPrice table{
+	border-top: 3px solid #968778;
+	width: 100%;
+	max-width: 350px;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+.orderForm{
+	display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+	width: 700px;
+    margin: auto;
+	padding: 100px;
+}
+
+.orderForm .title::after{
+	content: 'confirm your identity';
+}
+
+.orderForm .inputCheckout{
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.orderForm input, .orderForm textarea{
+	width: 100%;
+	padding: 10px;
+	outline: 0;
+	font-size: 15px;
+	height: 100%;
+    border: 1px solid #cfcdc8;
+    border-radius: 6px;
+    outline: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+	margin: auto;
+	background: #f7f7f7;
+}
+
+.orderRow{
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+	align-items: stretch;
+}
+
+.orderRow .inputCheckout{
+    flex-basis: 49%;
+}
+
+.orderForm .button{
+	color: #fff;
+	display: block;
+	width: 140px!important;
+	height: 45px;
+	outline: none;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 30px;
+	cursor: pointer;
+	flex-wrap: nowrap;
+	background: #5e4f45;
+	border: 2px solid #5e4f45;
+	transition: all 0.3s ease;
+	margin: auto;
+	font-family: 'Poppins', sans-serif;
+	line-height: 20px;
+}
+
+.orderForm .button:hover{
+	color: #5e4f45;
+	background: none;
+}
+
+.ordersPage{
+	margin: 80px auto;
+}
+
+.thankYouPage{
+	height: 900px;
+	
+}
+.thankYouPage h3{
+	font-size: 30px;
+	font-weight: normal;
+	font-family: 'Poppins';
+}
+
+.thankYouPage h2{
+	margin-bottom: 0;
+}
+
+footer{
+	font-family: 'Poppins', sans-serif;
+    background: #5e4f45;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span{
+    color: #c8e7e8;
+    text-decoration: none;
+}
+
+/* media query */
+
+@media (max-width: 1400px) {
+	
+	.cover .text2{
+        font-size: 60px;
+    }
+    .cover .text3{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1200px) {
+	
+	.cover .text2{
+        font-size: 55px;
+    }
+    .cover .text3{
+        font-size: 30px;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+	
+    .maxWidth{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+
+	.cover .text2{
+        font-size: 50px;
+    }
+    .cover .text3{
+        font-size: 30px;
+    }
+	
+	.maxWidth{
+        max-width: 930px;
+    }
+}
+
+@media (max-width: 800px) {
+	
+    .maxWidth{
+        padding: 0 23px;
+    }
+	
+    .cover .text2{
+        font-size: 45px;
+    }
+	
+    .cover .text3{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 660px) {
+	
+	.navigationBar .menu li{
+		display: block;
+    }
+	
+    .cover .text2{
+        font-size: 78px;
+    }
+	
+    .cover .text3{
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 580px) {
+	
+    .cover .text2{
+        font-size: 67px;
+    }
+	
+    .cover .text3{
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 510px) {
+	
+    .cover .text2{
+        font-size: 60px;
+    }
+	
+    .cover .text3{
+        font-size: 27px;
+    }
+}
